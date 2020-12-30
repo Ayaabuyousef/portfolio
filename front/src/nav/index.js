@@ -10,6 +10,7 @@ import About from "../pages/about";
 import Contact from "../pages/contact";
 import Loading from "../pages/loading";
 import Project from "../pages/projects";
+import Skills from "../pages/skills";
 
 export default function Nav() {
   return (
@@ -20,7 +21,8 @@ export default function Nav() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/project" component={Project} />
-        <Route path="*" component={Home} />
+        {/* <Route path="*" component={Home} /> */}
+        <Route path="/skill" component={Skills} />
       </Switch>
     </Router>
   );
